@@ -8,7 +8,7 @@ test('traveloka', async ({ page }) => {
   await page.locator('[data-cell-content]').filter({ has: page.getByText('Tansonnhat Intl') }).first().click();
 
   // Nhập nơi đến
-  await page.fill('input[placeholder="Destination"]', 'Bangkok')
+  await page.fill('input[placeholder="Destination"]', 'Japan')
   await page.locator('[data-cell-content]').filter({ has: page.getByText('Bangkok') }).first().click();
 
   // Tính toán ngày đi và ngày về
